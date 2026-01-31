@@ -88,6 +88,10 @@ L’objectif principal est de faciliter l’organisation des projections, le sui
     | id_film         | INT (FK) | Film projeté             |
     | id_salle        | INT (FK) | Salle utilisée           |
 
+
+<img width="1325" height="733" alt="database" src="https://github.com/user-attachments/assets/b4a47cd1-3418-4fe3-b341-7302d37d892b" />
+
+
 ## Diagramme de cas d’utilisation
 
 🎭 Acteur principal
@@ -118,17 +122,23 @@ L’objectif principal est de faciliter l’organisation des projections, le sui
 
 ## Technologies utilisées
 
-    - Base de données : MySQL
+Backend & Base de données
 
-    - Langage SQL : DDL / DML
+    - Java 17
+    - MySQL 8.0+
+    - JDBC
+    - Maven
 
-    Outils :
+Interface Graphique
 
-    - MySQL Workbench
+    - Java Swing
+    - JFreeChart 1.5.3 (pour les graphiques)
 
-    - IDE SQL
+Architecture
 
-    - Système : Architecture client–serveur
+    - DAO Pattern
+    - MVC Léger
+    - Stream API
 
 ## Architecture du projet / Structure
 📂 Structure logique

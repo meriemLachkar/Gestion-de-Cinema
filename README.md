@@ -178,6 +178,10 @@ Architecture
 
 ## Vidéo de test (contenu à montrer)
 
+
+https://github.com/user-attachments/assets/f1051b7e-5b51-4c85-ab64-9c6d077135f1
+
+
 ## Conclusion
 
 Ce projet permet de mettre en pratique les concepts fondamentaux des bases de données relationnelles :

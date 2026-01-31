@@ -5,57 +5,57 @@ L’objectif principal est de faciliter l’organisation des projections, le sui
 
     Le système permet :
 
-        - d’enregistrer les films projetés,
+         d’enregistrer les films projetés,
 
-        - de gérer les salles et leurs capacités,
+         de gérer les salles et leurs capacités,
 
-        - de planifier les séances avec des contraintes de cohérence,
+         de planifier les séances avec des contraintes de cohérence,
 
-        - d’assurer l’intégrité des données grâce aux clés primaires, étrangères et contraintes SQL.
+         d’assurer l’intégrité des données grâce aux clés primaires, étrangères et contraintes SQL.
 
 ## Fonctionnalités principales
 
 🎞 Gestion des films
 
-    - Ajouter un film (titre, genre, durée, réalisateur)
+     Ajouter un film (titre, genre, durée, réalisateur)
 
-    - Modifier les informations d’un film
+     Modifier les informations d’un film
 
-    - Supprimer un film
+     Supprimer un film
 
-    - Consulter la liste des films
+     Consulter la liste des films
 
 🏛 Gestion des salles
 
-    - Ajouter une salle
+     Ajouter une salle
 
-    - Définir la capacité d’une salle
+     Définir la capacité d’une salle
 
-    - Modifier les informations d’une salle
+     Modifier les informations d’une salle
 
-    - Supprimer une salle
+     Supprimer une salle
 
 📅 Gestion des séances
 
-    - Programmer une séance pour un film donné
+     Programmer une séance pour un film donné
 
-    - Associer une séance à une salle
+     Associer une séance à une salle
 
-    - Définir la date de projection et le prix
+     Définir la date de projection et le prix
 
-    - Gérer le nombre de tickets vendus
+     Gérer le nombre de tickets vendus
 
-    - Empêcher la duplication d’une séance (film + salle + date)
+     Empêcher la duplication d’une séance (film + salle + date)
 
 ## Base de données
 
 📌 Nom de la base de données
 
-    - cinema
+     cinema
 
 📌 Utilisateur de la base
 
-    - cinema_user
+     cinema_user
 
 ## Description des tables
 
@@ -114,31 +114,31 @@ L’objectif principal est de faciliter l’organisation des projections, le sui
 
 📌 Relations
 
-    - Un Film peut avoir plusieurs Séances
+    • Un Film peut avoir plusieurs Séances
 
-    - Une Salle peut accueillir plusieurs Séances
+    • Une Salle peut accueillir plusieurs Séances
 
-    - Une Séance est associée à un seul film et une seule salle
+    • Une Séance est associée à un seul film et une seule salle
 
 ## Technologies utilisées
 
 Backend & Base de données
 
-    - Java 17
-    - MySQL 8.0+
-    - JDBC
-    - Maven
+    • Java 17
+    • MySQL 8.0+
+    • JDBC
+    • Maven
 
 Interface Graphique
 
-    - Java Swing
-    - JFreeChart 1.5.3 (pour les graphiques)
+    • Java Swing
+    • JFreeChart 1.5.3 (pour les graphiques)
 
 Architecture
 
-    - DAO Pattern
-    - MVC Léger
-    - Stream API
+    • DAO Pattern
+    • MVC Léger
+    • Stream API
 
 ## Architecture du projet / Structure
 📂 Structure logique

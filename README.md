@@ -3,15 +3,15 @@
 Ce projet consiste à concevoir et développer un système de gestion de cinéma permettant d’administrer les films, les salles et les séances de projection.
 L’objectif principal est de faciliter l’organisation des projections, le suivi des tickets vendus et la gestion des ressources du cinéma à travers une base de données relationnelle fiable.
 
-Le système permet :
+    Le système permet :
 
-    - d’enregistrer les films projetés,
+        - d’enregistrer les films projetés,
 
-    - de gérer les salles et leurs capacités,
+        - de gérer les salles et leurs capacités,
 
-    - de planifier les séances avec des contraintes de cohérence,
+        - de planifier les séances avec des contraintes de cohérence,
 
-    - d’assurer l’intégrité des données grâce aux clés primaires, étrangères et contraintes SQL.
+        - d’assurer l’intégrité des données grâce aux clés primaires, étrangères et contraintes SQL.
 
 ## Fonctionnalités principales
 
@@ -50,42 +50,49 @@ Le système permet :
 ## Base de données
 
 📌 Nom de la base de données
+
     - cinema
+
 📌 Utilisateur de la base
+
     - cinema_user
 
 ## Description des tables
+
 🎬 Table film
-| Champ       | Type         | Description                |
-| ----------- | ------------ | -------------------------- |
-| id_film     | INT (PK)     | Identifiant du film        |
-| titre       | VARCHAR(100) | Titre du film              |
-| genre       | VARCHAR(50)  | Genre du film              |
-| duree       | INT          | Durée du film (en minutes) |
-| realisateur | VARCHAR(100) | Réalisateur                |
+
+    | Champ       | Type         | Description                |
+    | ----------- | ------------ | -------------------------- |
+    | id_film     | INT (PK)     | Identifiant du film        |
+    | titre       | VARCHAR(100) | Titre du film              |
+    | genre       | VARCHAR(50)  | Genre du film              |
+    | duree       | INT          | Durée du film (en minutes) |
+    | realisateur | VARCHAR(100) | Réalisateur                |
 
 🏛 Table salle
-| Champ    | Type        | Description             |
-| -------- | ----------- | ----------------------- |
-| id_salle | INT (PK)    | Identifiant de la salle |
-| nom      | VARCHAR(50) | Nom de la salle         |
-| capacite | INT         | Capacité de la salle    |
+
+    | Champ    | Type        | Description             |
+    | -------- | ----------- | ----------------------- |
+    | id_salle | INT (PK)    | Identifiant de la salle |
+    | nom      | VARCHAR(50) | Nom de la salle         |
+    | capacite | INT         | Capacité de la salle    |
 
 📅 Table seance
-| Champ           | Type     | Description              |
-| --------------- | -------- | ------------------------ |
-| id              | INT (PK) | Identifiant de la séance |
-| date_projection | DATE     | Date de projection       |
-| prix            | DOUBLE   | Prix du ticket           |
-| tickets_vendus  | INT      | Nombre de tickets vendus |
-| id_film         | INT (FK) | Film projeté             |
-| id_salle        | INT (FK) | Salle utilisée           |
+
+    | Champ           | Type     | Description              |
+    | --------------- | -------- | ------------------------ |
+    | id              | INT (PK) | Identifiant de la séance |
+    | date_projection | DATE     | Date de projection       |
+    | prix            | DOUBLE   | Prix du ticket           |
+    | tickets_vendus  | INT      | Nombre de tickets vendus |
+    | id_film         | INT (FK) | Film projeté             |
+    | id_salle        | INT (FK) | Salle utilisée           |
 
 ## Diagramme de cas d’utilisation
 
 🎭 Acteur principal
 
-Administrateur
+    Administrateur
 
 📌 Cas d’utilisation
 
@@ -99,44 +106,45 @@ Administrateur
 
 📌 Description textuelle du diagramme :
 
-L’administrateur interagit avec le système pour gérer les films, les salles et les séances de projection.
+    L’administrateur interagit avec le système pour gérer les films, les salles et les séances de projection.
 
 ## Diagramme de classe
 
 📦 Classes principales
-Classe Film
 
-    id_film
+    Classe Film
 
-    titre
+        - id_film
 
-    genre
+        - titre
 
-    duree
+        - genre
 
-    realisateur
+        - duree
 
-Classe Salle
+        - realisateur
 
-    id_salle
+    Classe Salle
 
-    nom
+        - id_salle
 
-    capacite
+        - nom
 
-Classe Seance
+        - capacite
 
-    id
+    Classe Seance
 
-    date_projection
+        - id
 
-    prix
+        - date_projection
 
-    tickets_vendus
+        - prix
 
-    film
+        - tickets_vendus
 
-    salle
+        - film
+
+        - salle
 
 📌 Relations
 
@@ -148,17 +156,17 @@ Classe Seance
 
 ## Technologies utilisées
 
-    Base de données : MySQL
+    - Base de données : MySQL
 
-    Langage SQL : DDL / DML
+    - Langage SQL : DDL / DML
 
     Outils :
 
-    MySQL Workbench / phpMyAdmin
+    - MySQL Workbench / phpMyAdmin
 
-    IDE SQL
+    - IDE SQL
 
-    Système : Architecture client–serveur
+    - Système : Architecture client–serveur
 
 ## Architecture du projet / Structure
 📂 Structure logique

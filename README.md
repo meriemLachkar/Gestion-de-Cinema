@@ -96,7 +96,7 @@ L’objectif principal est de faciliter l’organisation des projections, le sui
 
 🎭 Acteur principal
 
-    Administrateur
+    • Administrateur
 
 📌 Cas d’utilisation
 
@@ -175,6 +175,22 @@ Architecture
     ├── lib/                     
     ├── pom.xml                  
     └── README.md                
+
+## Vidéo de test (contenu à montrer)
+
+## Conclusion
+
+Ce projet permet de mettre en pratique les concepts fondamentaux des bases de données relationnelles :
+
+    • Modélisation UML
+
+    • Contraintes d’intégrité
+
+    • Relations entre tables
+
+    • Normalisation des données
+
+Il constitue une base solide pour une future extension vers une application web ou desktop.
 
 ## Auteur
 Meriem Lachkar

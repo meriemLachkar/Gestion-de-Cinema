@@ -96,13 +96,7 @@ L’objectif principal est de faciliter l’organisation des projections, le sui
 
 📌 Cas d’utilisation
 
-    - Gérer les films
-
-    - Gérer les salles
-
-    - Programmer les séances
-
-    - Consulter les séances
+<img width="886" height="777" alt="use_case_diagram" src="https://github.com/user-attachments/assets/153d85fa-62e8-4262-8628-fa4f0a2a530c" />
 
 📌 Description textuelle du diagramme :
 
@@ -110,41 +104,7 @@ L’objectif principal est de faciliter l’organisation des projections, le sui
 
 ## Diagramme de classe
 
-📦 Classes principales
-
-    Classe Film
-
-        - id_film
-
-        - titre
-
-        - genre
-
-        - duree
-
-        - realisateur
-
-    Classe Salle
-
-        - id_salle
-
-        - nom
-
-        - capacite
-
-    Classe Seance
-
-        - id
-
-        - date_projection
-
-        - prix
-
-        - tickets_vendus
-
-        - film
-
-        - salle
+<img width="836" height="650" alt="class_diagram" src="https://github.com/user-attachments/assets/5ca18b24-3953-4e1b-a00c-0379442018dd" />
 
 📌 Relations
 
@@ -162,7 +122,7 @@ L’objectif principal est de faciliter l’organisation des projections, le sui
 
     Outils :
 
-    - MySQL Workbench / phpMyAdmin
+    - MySQL Workbench
 
     - IDE SQL
 
